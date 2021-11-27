@@ -30,7 +30,7 @@ const ControlledAccordion = (props: AccordionPropsType) => {
         <div>
             <AccordionTitle title={props.titleValue} />
             <button onClick={() => setCollapsed(!collapsed)}>{collapsed ? 'Show' : 'Collapse'}</button>
-            {!collapsed && <AccordionBody messages={messages} onClick= {(id)=> {alert(`Number ${id} was chosen`)}}/>}
+            {!collapsed && <AccordionBody messages={messages} onClick={(id) => { alert(`Number ${id} was chosen`) }} />}
         </div>
     );
 }
@@ -43,7 +43,7 @@ function AccordionTitle(props: AccordionTitlePropsType) {
 function AccordionBody(props: AccordionBodyType) {
     return (
         <ul>
-            {props.messages.map(m => <li key={m.id} onClick={() => {props.onClick(m.id)}}>{m.title}</li>)}
+            {props.messages.map(m => <li key={m.id} onClick={() => { props.onClick(m.id) }}>{m.title}</li>)}
         </ul>
     );
 }
