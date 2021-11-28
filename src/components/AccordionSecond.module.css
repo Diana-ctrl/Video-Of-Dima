@@ -1,0 +1,14 @@
+.selected {
+    border: 1px solid black;
+    display: inline-block;
+    min-width: 20px;
+    min-height: 20px;
+
+}
+.active {
+    border: 1px solid black;
+    display: inline-block;
+    min-width: 20px;
+    min-height: 20px;
+    background-color: blueviolet;
+}
